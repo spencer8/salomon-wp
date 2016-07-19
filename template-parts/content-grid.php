@@ -13,13 +13,16 @@
 	<div class="entry-content">
 		<?php
 
+			echo '<a href="'. get_the_permalink() .'">';
+				salomon_thumb_with_fallback(); 
+			echo '</a>';
 			echo '<a href="'. get_the_permalink() .'">'. get_the_title() . '</a>';
 
 			/* translators: %s: Name of current post */
-			the_content( sprintf(
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentysixteen' ),
-				get_the_title()
-			) );
+			// the_content( sprintf(
+			// 	__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentysixteen' ),
+			// 	get_the_title()
+			// ) );
 
 		?>
 	</div><!-- .entry-content -->
