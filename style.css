@@ -1,0 +1,37 @@
+/*
+ Theme Name:   Salomon Child Theme
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Twenty Fifteen Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     twentysixteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  salomon
+*/
+
+.home .content-area,
+.archive .content-area {
+	float: none;
+	margin-right: 0;
+	width: 100%;
+}
+
+
+
+@media screen and (min-width: 61.5625em) {
+
+	.home .content-area .site-main,
+	.archive .content-area .site-main {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.home .content-area article,
+	.archive .content-area article {
+		width: 30%;
+	}
+
+}
